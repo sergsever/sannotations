@@ -12,9 +12,10 @@ public class App {
 	
 	public static void main(String[] args )
 	{
-		ApplicationContext ctx = new AnnotationConfigApplicationContext("com.lvov");
+		AnnotationConfigApplicationContext ctx = new AnnotationConfigApplicationContext("com.lvov");
 		System.out.println("spring annotations\n");
 		BeanUser user = (BeanUser) ctx.getBean(BeanUser.class);
 		System.out.println("name: " + user.getName());
+		ctx.close();
 	}
 }

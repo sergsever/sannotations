@@ -11,9 +11,10 @@ public class AppConfig {
 	public EmployeeBean employee(){
 		return new EmployeeBean();
 	}
-	@Bean
-	public BeanUser beanuser()
+//	@Bean
+/*	public BeanUser beanuser()
 	{
 		return new BeanUser();
 	}
+*/
 }
